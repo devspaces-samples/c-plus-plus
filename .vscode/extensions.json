@@ -2,7 +2,7 @@
   // See https://go.microsoft.com/fwlink/?LinkId=827846
   // for the documentation about the extensions.json format
   "recommendations": [
-    "che-incubator.cpptools",
-    "redhat.dependency-analytics"
+    "eclipse-cdt.cdt-gdb-vscode",
+    "llvm-vs-code-extensions.vscode-clangd"
   ]
 }
