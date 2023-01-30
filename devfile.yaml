@@ -7,18 +7,3 @@ components:
       image: registry.redhat.io/devspaces/udi-rhel8:3.5
       memoryLimit: 2Gi
       mountSources: true
-commands:
-  - id: build-current-algorithm
-    exec:
-      component: tools
-      workingDir: '${fileDirname}'
-      commandLine: rm -f "${fileDirname}"/bin.out && g++ -g "${file}" -o bin.out && echo "Build complete"
-      group:
-        kind: build
-  - id: run-current-algorithm
-    exec:
-      component: tools
-      workingDir: '${fileDirname}'
-      commandLine: ./bin.out
-      group:
-        kind: run
